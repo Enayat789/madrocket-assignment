@@ -31,13 +31,8 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="h-screen w-[25vw] bg-white shadow-md border-r">
-      <nav className="h-full flex flex-col">
-        {/* Header */}
-        <div className="p-4 px-6 pb-2 flex justify-between items-center">
-          <img src="/logoipsum-332.svg" alt="Company Logo" className="w-28" />
-        </div>
-
+    <aside className="w-[25vw] h-full bg-white shadow-md border-r">
+      <nav className="h-full flex flex-col pt-4">
         {/* Navigation Links */}
         <ul className="flex flex-col p-4 w-full h-full gap-4">
           <li>
@@ -54,20 +49,12 @@ export default function Sidebar() {
               </button>
             </NavLink>
           </li>
-          {/* <li>
-            <button
-              className="text-gray-700 p-4 w-[90%] bg-gray-100 hover:bg-gray-200 flex justify-start items-center"
-              onClick={() => onNavigate("/login")}
-            >
-              signIn / signUp
-            </button>
-          </li> */}
         </ul>
 
         {/* Logout Button */}
         {user ? (
           <div className="p-4">
-            <NavLink to={"login"}>
+            <NavLink to={"/login"}>
               <button
                 className="w-[90%] p-3 bg-red-500 text-white rounded hover:bg-red-600"
                 onClick={onLogout}

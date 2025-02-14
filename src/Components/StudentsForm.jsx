@@ -95,7 +95,7 @@ export default function StudentsForm() {
       <h2 className="text-2xl font-bold mb-4">Add Student</h2>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-lg w-96 max-h-[90vh] overflow-auto"
+        className="bg-white p-6 rounded-lg w-96 max-h-[75vh] overflow-auto"
       >
         <div className="mb-4">
           <label className="block mb-2">Name</label>

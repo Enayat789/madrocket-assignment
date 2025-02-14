@@ -31,8 +31,8 @@ export default function Login() {
   };
 
   return (
-    <div className="w-[75vw] h-[100vh] flex justify-center">
-      <div className="bg-gray-200 w-[35%] h-[63%] m-auto flex flex-col justify-between items-center px-6 gap-4 py-8 rounded-lg">
+    <div className="w-[100vw] h-full flex justify-center">
+      <div className="bg-gray-200 w-full sm:w-[65%] lg:w-[30%] h-auto m-auto flex flex-col justify-between items-center px-6 gap-4 py-8 rounded-lg">
         <div className="w-full flex flex-col items-center justify-center gap-1">
           <h2 className="text-3xl">Sign in</h2>
           <p>
